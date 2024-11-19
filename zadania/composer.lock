@@ -4778,16 +4778,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v11.4.1",
+            "version": "v11.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "0a3bd0dfbd44c407f932cb5395c814f95f3fb77b"
+                "reference": "c3beefe92e4ac592d09b2e103ad509de97b10e69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/0a3bd0dfbd44c407f932cb5395c814f95f3fb77b",
-                "reference": "0a3bd0dfbd44c407f932cb5395c814f95f3fb77b",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/c3beefe92e4ac592d09b2e103ad509de97b10e69",
+                "reference": "c3beefe92e4ac592d09b2e103ad509de97b10e69",
                 "shasum": ""
             },
             "require": {
@@ -4841,7 +4841,7 @@
                 "scheb/2fa-google-authenticator": "^6.0",
                 "spatie/image-optimizer": "^1.6.2",
                 "symfony-cmf/routing-bundle": "^3.0",
-                "symfony/cache": "^6.4",
+                "symfony/cache": "^6.4.12",
                 "symfony/config": "^6.4",
                 "symfony/console": "^6.4",
                 "symfony/contracts": "^3.2",
@@ -4893,6 +4893,7 @@
                 "umpirsky/country-list": "^2.0.6"
             },
             "conflict": {
+                "phpstan/phpdoc-parser": ">=2.0",
                 "pimcore/admin-ui-classic-bundle": "<1.5",
                 "sabre/dav": "4.2.2",
                 "symfony/symfony": "*",
@@ -4906,7 +4907,7 @@
                 "composer/composer": "*",
                 "ergebnis/phpstan-rules": "^2.0",
                 "gotenberg/gotenberg-php": "^1.1 || ^2.4",
-                "phpstan/phpstan": "1.12.5",
+                "phpstan/phpstan": "1.12.11",
                 "phpstan/phpstan-symfony": "^1.3.5",
                 "phpunit/phpunit": "^9.3",
                 "symfony/dotenv": "^6.4",
@@ -4920,8 +4921,10 @@
                 "ext-redis": "*",
                 "ext-sockets": "*",
                 "gotenberg/gotenberg-php": "^2.0 - Required for generating pdf via Gotenberg in assets preview (LibreOffice), page preview, version diff and web2print",
+                "phpdocumentor/reflection-docblock": "^5.2 - Required for Pimcore Generic Execution Engine Bundle",
                 "pimcore/admin-ui-classic-bundle": "^1.5.0",
                 "symfony/dotenv": "Required for loading environment vars from .env files",
+                "symfony/property-info": "^6.3 - Required for Pimcore Generic Execution Engine Bundle",
                 "webmozarts/console-parallelization": "Required for parallelization of console commands"
             },
             "bin": [
@@ -4991,7 +4994,7 @@
                 "source": "https://github.com/pimcore/pimcore",
                 "wiki": "https://pimcore.com/docs/latest/"
             },
-            "time": "2024-10-08T08:51:25+00:00"
+            "time": "2024-11-19T12:07:59+00:00"
         },
         {
             "name": "pimcore/platform-version",

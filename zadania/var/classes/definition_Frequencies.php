@@ -5,7 +5,7 @@
  * Variants: no
  *
  * Fields Summary:
- * - frequency_id [numeric]
+ * - frequency_id [input]
  * - airport_ref [numeric]
  * - airport_ident [input]
  * - freq_type [input]
@@ -20,7 +20,7 @@ return \Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'title' => '',
    'description' => '',
    'creationDate' => NULL,
-   'modificationDate' => 1732013866,
+   'modificationDate' => 1732029134,
    'userOwner' => 2,
    'userModification' => 2,
    'parentClass' => '',
@@ -64,7 +64,7 @@ return \Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'children' => 
         array (
           0 => 
-          \Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
+          \Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'frequency_id',
              'title' => 'Frequency _id',
              'tooltip' => '',
@@ -83,13 +83,13 @@ return \Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
             array (
             ),
              'defaultValue' => NULL,
-             'integer' => false,
-             'unsigned' => false,
-             'minValue' => NULL,
-             'maxValue' => NULL,
+             'columnLength' => 190,
+             'regex' => '',
+             'regexFlags' => 
+            array (
+            ),
              'unique' => false,
-             'decimalSize' => NULL,
-             'decimalPrecision' => NULL,
+             'showCharCount' => false,
              'width' => '',
              'defaultValueGenerator' => '',
           )),
